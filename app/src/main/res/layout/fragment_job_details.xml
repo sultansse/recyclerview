@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:paddingTop="20dp"
+    tools:context=".JobDetailsFragment">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/app_bar_layout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:menu="@menu/menu_details"
+            app:navigationIcon="@drawable/ic_back" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <View
+        android:id="@+id/divider_description"
+        android:layout_width="0dp"
+        android:layout_height="5dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/paystack_color"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/salary" />
+
+    <View
+        android:id="@+id/divider_general"
+        android:layout_width="0dp"
+        android:layout_height="5dp"
+        android:layout_marginTop="12dp"
+        android:background="@color/paystack_color"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/posted_date" />
+
+    <TextView
+        android:id="@+id/location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/work_from_anywhere"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@+id/location_label"
+        app:layout_constraintTop_toBottomOf="@+id/location_label" />
+
+    <TextView
+        android:id="@+id/location_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/job_location"
+        android:textColor="@color/label_color"
+        android:textFontWeight="500"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@+id/nature"
+        app:layout_constraintTop_toTopOf="@+id/salary_label" />
+
+    <TextView
+        android:id="@+id/salary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/_40k_60k_yearly"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@+id/salary_label"
+        app:layout_constraintTop_toBottomOf="@+id/salary_label" />
+
+    <TextView
+        android:id="@+id/salary_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/salary_range"
+        android:textColor="@color/label_color"
+        android:textFontWeight="500"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@+id/date"
+        app:layout_constraintTop_toBottomOf="@+id/date" />
+
+    <TextView
+        android:id="@+id/nature"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="@string/full_time"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@+id/nature_label"
+        app:layout_constraintTop_toBottomOf="@+id/nature_label" />
+
+    <TextView
+        android:id="@+id/nature_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="102dp"
+        android:text="@string/job_nature"
+        android:textColor="@color/label_color"
+        android:textFontWeight="500"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@+id/date_label"
+        app:layout_constraintTop_toTopOf="@+id/date_label" />
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/_03_june_2022"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@+id/date_label"
+        app:layout_constraintTop_toBottomOf="@+id/date_label" />
+
+    <TextView
+        android:id="@+id/date_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/apply_before"
+        android:textColor="@color/label_color"
+        android:textFontWeight="500"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@+id/posted_date"
+        app:layout_constraintTop_toBottomOf="@+id/divider_general" />
+
+    <TextView
+        android:id="@+id/job_description_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/job_description_label"
+        android:textColor="@color/label_color"
+        android:textFontWeight="600"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@+id/salary"
+        app:layout_constraintTop_toBottomOf="@+id/divider_description" />
+
+    <TextView
+        android:id="@+id/job_description"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:textSize="12sp"
+        android:text="@string/job_description"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/job_description_label"
+        app:layout_constraintTop_toBottomOf="@+id/job_description_label" />
+
+    <TextView
+        android:id="@+id/posted_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/posted_on_3_march"
+        android:textColor="@color/label_color"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@+id/company"
+        app:layout_constraintTop_toBottomOf="@+id/company" />
+
+    <TextView
+        android:id="@+id/company"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/canva"
+        android:textColor="@color/label_color"
+        android:textFontWeight="500"
+        app:layout_constraintStart_toStartOf="@+id/name"
+        app:layout_constraintTop_toBottomOf="@+id/name" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="@string/junior_ux_designer"
+        android:textFontWeight="500"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/image"
+        app:layout_constraintTop_toBottomOf="@+id/image" />
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/ic_canva"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/app_bar_layout" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/see_more_button"
+        style="@style/Widget.Material3.Button.TextButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/see_more"
+        android:textColor="@color/text_button_color"
+        android:textFontWeight="600"
+        android:textSize="12sp"
+        app:icon="@drawable/ic_see_more"
+        app:iconGravity="end"
+        app:iconTint="@color/text_button_color"
+        app:layout_constraintStart_toStartOf="@+id/job_description"
+        app:layout_constraintTop_toBottomOf="@+id/job_description" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
