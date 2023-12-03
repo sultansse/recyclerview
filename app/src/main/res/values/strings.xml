@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Recyclerview Jobs</string>
+    <string name="why_smartr_read_here">Why Smartr? Read here</string>
+    <string name="get_started">Get started</string>
+    <string name="logo">logo</string>
+    <string name="welcome_img">welcome_img</string>
+    <string name="fresh_look_same_login">Fresh look, same login.</string>
+    <string name="smartrecruiters_candidate_portal_is_now_smartr">SmartRecruiters candidate portal is now Smartr.</string>
+    <string name="salary">"$%d-%dk/yearly"</string>
+    <string name="see_more">See more</string>
+    <string name="work_from_anywhere">Work from anywhere</string>
+    <string name="job_location">JOB LOCATION</string>
+    <string name="_40k_60k_yearly">40k - 60k/yearly</string>
+    <string name="salary_range">SALARY RANGE</string>
+    <string name="full_time">Full-time</string>
+    <string name="job_nature">JOB NATURE</string>
+    <string name="_03_june_2022">03 June, 2022</string>
+    <string name="apply_before">APPLY BEFORE</string>
+    <string name="job_description_label">JOB DESCRIPTION</string>
+    <string name="job_description">Can you bring creative human-centered ideas to life and make great things happen beyond what meets the eye?\nWe believe in teamwork, fun, complex projects, diverse perspectives, and simple solutions. How about you? We\'re looking for a like-minded</string>
+    <string name="canva">Canva</string>
+    <string name="junior_ux_designer">Junior UX Designer</string>
+    <string name="posted_on_3_march">Posted on 3 March</string>
+</resources>

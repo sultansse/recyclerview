@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="welcome_btn_color">#BFDBD1</color>
+    <color name="welcome_btn_text_color">#135B46</color>
+    <color name="job_listing_background">#BFDBD1</color>
+    <color name="paystack_color">#2E12AA73</color>
+    <color name="job_category_color">#434545</color>
+    <color name="red">#E53935</color>
+    <color name="text_button_color">#0FAC74</color>
+    <color name="label_color">#434545</color>
+</resources>
